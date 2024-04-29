@@ -22,9 +22,10 @@ body{
     font-size: 3rem;
     text-align: left;
     border: none;
-    background-color: aquamarine;
+    /* color: white; */
+    background-color: rgb(8, 201, 240);
 }
-#btn{
+#keys{
     display: grid;
     grid-template-columns: repeat(5,1fr);
     gap: 10px;
@@ -49,12 +50,12 @@ button:hover{
 button:active{
     background-color: hsl(0, 0%, 50%);
 }
-#btn-clr{
+.btn-clr{
     background-color: hsl(135, 96%, 35%);
 }
-#btn-clr:hover{
+.btn-clr:hover{
     background-color: hsl(135, 96%, 40%);
 }
-#btn-clr:active{
+.btn-clr:active{
     background-color: hsl(135, 96%, 48%);
 }

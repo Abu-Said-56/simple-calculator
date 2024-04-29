@@ -10,13 +10,13 @@
     
     <div id="Calculator">
         <input id="display" readonly>
-        <div id="btn">
+        <div id="keys">
             
             <button onclick="appendToCalculate(`7`)">7</button>
             <button onclick="appendToCalculate(`8`)">8</button>
             <button onclick="appendToCalculate(`9`)">9</button>
-            <button onclick="clearDisplay()" id="btn-clr">Del</button>
-            <button onclick="clearDisplay()" id="btn-clr">AC</button>
+            <button onclick="deleteLastChar()" class="btn-clr">Del</button>
+            <button onclick="clearDisplay()" class="btn-clr">AC</button>
 
             <button onclick="appendToCalculate(`4`)">4</button>
             <button onclick="appendToCalculate(`5`)">5</button>
@@ -36,8 +36,8 @@
             <button onclick="appendToCalculate(`00`)">00</button>
             <button onclick="appendToCalculate(`.`)">.</button>
             
-            <button onclick="appendToCalculate(`.`)">Ans</button>
-            <button onclick="Calculate(`+`)">=</button>
+            <button onclick="addToDisplay(`Ans`)">Ans</button>
+            <button onclick="Calculate('')">=</button>
             
             
              
